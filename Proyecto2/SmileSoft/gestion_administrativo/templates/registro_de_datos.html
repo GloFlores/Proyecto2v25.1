@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es"></html>
+    <head>
+        <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href= "{% static 'estilo2.css'%}">
+     <title>Formulario Registro de SmileSoft</title>
+
+    </head>
+    <body>
+    <div class="form">
+        <h4>Registro de Personas</h4>         
+            <form method="POST">
+                {% csrf_token %}                
+                    <table>
+                            {% comment %} {{form}}      {% endcomment %}
+                            <form class= "message">
+                                {{form}}  
+                            <span class=estiloError>
+                                
+                            ⚠️ Importante ⚠️
+                            </span>
+                {% if messages %}
+                        <ul class="messages">
+                                {% for message in messages %}
+                                    <li{% if message.tags %}
+                                    class="{{ message.tags }}"{% endif %}>{{ message }}
+                                </li>
+                                {% endfor %}
+                        </ul>    
+                {% endif %}
+                    <div class="alert alert-{{ message.tags }}">
+                                    {{ message }}
+                    </div>
+            </form>                      
+        
+                    </table>
+                        <br>
+                    <button>Guardar Datos</button>
+
+        </form>
+     </form>
+ </div>
+
+    </body>
+</html>

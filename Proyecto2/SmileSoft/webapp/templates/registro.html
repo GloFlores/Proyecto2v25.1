@@ -1,0 +1,26 @@
+{% comment %} <DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>REGISTRO DE DATOS DEL USUARIO</title>
+  </head>
+  <body>
+    <p> SmileSoft</p>
+    
+    <div class="container">
+        <div class="header"><a href="@"><img src"" alt="Bienvenido" name="HOLA"
+        width="180" height="90" style="background-color: #C6D580; display:block;"
+        /></a>
+        <div class="content">
+    <form action="/smilesoft/Consultorio/Sistema/Gracias/" method="post">
+      {% csrf_token %}
+    {{ form.as_p}}
+    <input type= "submit" value="Registrarme"/>
+    </form>
+        </div>
+        <div class="footer">
+
+
+  </body>
+</html>
+ {% endcomment %}

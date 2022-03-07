@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ingreso al sistema</title> 
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="col-12 col-md-6 0-offset-md-3">
+                <div class="card">
+                    <div class="car-body">
+                        <h2>Ingresa tus credenciales</h2>
+                        <hr>
+                        <form action="" method="post">
+                            {% csrf_token}
+                            {{form}}
+
+                            <input type="submit" value="ingresar">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+</html>

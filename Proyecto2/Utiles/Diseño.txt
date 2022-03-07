@@ -1,0 +1,112 @@
+
+|Pag. para Animaciones de css: https://animate.style/
+    *CDN
+    <head> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     </head>
+    *EJEMPLO
+    <h1 class="animate__animated animate__bounce">DA SALTOS</h1>
+
+
+    *EJEMPLO 2. CENTRA Y SALTA
+    
+                <div class="col-md12">
+                    <h1 class="animate__animated animate__bounce">SmileSoft
+                        <!--small es para subtitulo al lado del titulo principal-->
+                        <small> Bienvenido al sistema </small>
+                    </h1>
+                </div>
+            </div>
+
+<!-->
+|Es para las 3barras del icono
+ <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler"  data-target="menu" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              <!--MENU-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+<!-->
+|BARRITA PARA BUSCAR
+ <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+
+|imagen de logo
+      {% comment %} <!--para la imagen en la esquina PERO NO FUNCIONA-->
+        <img src="img/fondo.jpg" alt="logo" width="150px"> {% endcomment %}
+
+|Barra con color
+style="background-color: rgba(178, 60, 253, 0.6);
+
+|alineacion
+|<div class="row align-items-center" style="heigth:240px; border:1px solid #000 background #bbb">
+        <div class="col"> SmileSoft </div> 
+        <div class="col"> SmileSoft </div> 
+        <div class="col"> SmileSoft </div> 
+      </div>
+
+|OPCION NO DESPLABLE DE LA Barra
+ <li class="nav-item">
+              <a class="nav-link" href="#">Roles</a>
+            </li>
+
+
+|para BORDES
+
+  <span class="border border-primary">
+                                            Sistema Odontológico 
+                                            </span>
+                                          </div> 
+
+      
+|ICONOS
+
+      
+  <samp class="icono icon-dot"> 
+   <FONT COLOR="blue">Inicio </FONT>
+    </samp>
+
+ |COLORES
+
+ B><FONT COLOR="red">Texto ROJO </FONT>
+<br>
+<FONT COLOR="blue">Texto AZUL </FONT>
+<br>
+<FONT COLOR="navy">Texto AZUL MARINO </FONT>
+<br>
+<FONT COLOR="green">Texto VERDE </FONT>
+<br>
+<FONT COLOR="olive">Texto OLIVA </FONT>
+<br>
+<FONT COLOR="yellow">Texto AMARILLO </FONT>
+<br>
+<FONT COLOR="lime">Texto LIMA </FONT>
+<br>
+<FONT COLOR="magenta">Texto MAGENTA </FONT>
+<br>
+<FONT COLOR="purple">Texto PURPURA </FONT>
+<br>
+<FONT COLOR="cyan">Texto CYAN </FONT>
+<br>
+<FONT COLOR="brown">Texto MARRON </FONT>
+<br>
+<FONT COLOR="black">Texto NEGRO </FONT>
+<br>
+<FONT COLOR="gray">Texto GRIS </FONT>
+<br>
+<FONT COLOR="teal">Texto TEAL </FONT>
+<br>
+<FONT COLOR="white">Texto BLANCO </FONT>
+<br>
+
+| TAMAÑOS   
+<FONT SIZE=6 COLOR="red">E</FONT><FONT SIZE=4>sto es una </FONT> 
+<FONT SIZE=6 COLOR="red">P</FONT><FONT SIZE=4>rueba </FONT>
+Resulta:
+Esto es una Prueba

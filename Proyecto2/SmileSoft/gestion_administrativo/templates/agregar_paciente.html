@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es"></html>
+    <head>
+         <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href= "{% static 'style.css'%}">
+        <title>Datos del Paciente</title>
+    </head>
+    <body>
+        <section class="form-register">
+            <h4> Paciente</h4>
+            <h3>Agregue sus datos personales </h3>
+            <form method="POST">
+                {% csrf_token %}
+                <table>
+                   {{form}}
+                </table>
+                 {% comment %} #<button type="submit">Guardar datos</button> {% endcomment %}
+                       <input class="botons" type="submit" value="Guardar registro del paciente">
+            </form>
+        </section>
+
+    </body>
+</html>
